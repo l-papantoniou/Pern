@@ -128,11 +128,6 @@ const ListEmployees = ({ setAuth }) => {
             justifyContent: "space-between",
           }}
         >
-          <div
-            style={{
-              color: "white",
-            }}
-          ></div>
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>

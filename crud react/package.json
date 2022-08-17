@@ -22,6 +22,7 @@
     "moment": "^2.29.3",
     "react": "^17.0.2",
     "react-confirm-alert": "^2.8.0",
+    "react-dark-mode-toggle": "^0.2.0",
     "react-date-picker": "^8.4.0",
     "react-datepicker": "^4.7.0",
     "react-dom": "^17.0.2",
@@ -32,6 +33,7 @@
     "redux": "^4.2.0",
     "source-map-loader": "^4.0.0",
     "styled-components": "^5.3.3",
+    "use-dark-mode-ts": "^1.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
