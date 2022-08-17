@@ -1,0 +1,40 @@
+version: "3.8"
+services:
+  react-app:
+    image: lampis/crud-pern-app_react-app
+    container_name: client
+    ports:
+      - "3000:3000"
+    networks:
+      pern-app:
+    stdin_open: true
+    tty: true
+
+  server:
+    image: lampis/crud-pern-app_api-server
+    container_name: server
+    ports:
+      - "5000:5000"
+    networks:
+      pern-app:
+
+  postgres_db:
+    image: lampis/crud-pern-app_postgres_db
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1111
+      POSTGRES_DATABASE: company
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5438:5432"
+    networks:
+      pern-app:
+    volumes: 
+     - ./pgdata:/var/lib/postgresql/data
+
+networks:
+  pern-app:
+volumes:
+  pgdata:
+    driver: local
