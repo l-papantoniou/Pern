@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const pool = require("./db");
-const jwtGenerator = require("./jwtGenerator");
-const validInfo = require("./validinfo");
-const authorization = require("./authorization");
+const pool = require("./Db");
+const jwtGenerator = require("./JwtGenerator");
+const validInfo = require("./ValidInfo");
+const authorization = require("./Authorization");
 
 //login route
 
