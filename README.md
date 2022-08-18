@@ -32,7 +32,7 @@ This project consists in a Web Frontend Application and a Web Backend Applicatio
 First, clone the repo:
 
 ```bash
-  git clone https://github.com/LamprosPapantoniou/CRUD-PERN-APP
+  git clone https://github.com/l-papantoniou/pern
 ```
 
 To install the dependencies
@@ -44,13 +44,14 @@ To install the dependencies
 To run the Backend
 
 ```bash
+  cd crud node
   nodemon index
 ```
 
 To run the Frontend
 
 ```bash
- cd client
+ cd crud react
  npm start
 ```
 
