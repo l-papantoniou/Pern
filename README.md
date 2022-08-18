@@ -13,7 +13,7 @@ Delete, Update and Get company employees.
 
 ## Tech Stack
 
-**Client:** React, MaterialUI
+**Client:** React, TypeScript, MaterialUI
 
 **Server:** Node, Express
 
