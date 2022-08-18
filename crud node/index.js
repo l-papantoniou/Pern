@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const pool = require("./db");
+const pool = require("./Db");
 const path = require("path");
 const { nextTick } = require("process");
 const PORT = process.env.PORT || 5000;
@@ -36,10 +36,10 @@ return true;
 }
 
 //login route
-app.use("/auth", require("./jwtAuth"));
+app.use("/auth", require("./JwtAuth"));
 
 //dashboard route
-app.use("/dashboard", require("./dashboard"));
+app.use("/dashboard", require("./Dashboard"));
 
 
 //create an employee
