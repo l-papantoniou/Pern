@@ -39,6 +39,8 @@ To install the dependencies
 
 ```bash
   npm install
+  cd crud node
+  npm install
 ```
 
 To run the Backend
